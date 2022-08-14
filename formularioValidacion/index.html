@@ -7,11 +7,147 @@
     <title>formulario</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <i class="formulario__validacion-estado fas fa-times-circle"></i>
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+    <h1 style="text-align: center ;" >Formulario </h1>
+    
     <main>
-        
+        <from action="" class="formulario" id="formulario">
+            <!--Grupo Usuario-->
+            <div class="formulario__grupo" id="gurpo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Sutano">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error"> El usario tiene que ser de 4 a 16 digitos y solo ouede contener numeros y guien bajo.  </p>
+            </div>   
+            
+            <!--Grupo nombre-->
+            <div class="formulario__grupo" id="gurpo__nombre">
+                <label for="nombre" class="formulario__label">Nombre:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Sutano">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error"> El nombre solo se permiten letras una mayusculas y minusculas.  </p>
+            </div> 
+
+
+             <!--Grupo apellidos-->
+             <div class="formulario__grupo" id="gurpo__apellidos">
+                <label for="apellidos" class="formulario__label">Apellidos:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="Mengano Perengano">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error"> El apellidos solo se permiten letras una mayusculas y minusculas.  </p>
+            </div> 
+
+            <!--Grupo correo Electronico-->
+            <div class="formulario__grupo" id="gurpo__correo">
+                <label for="correo" class="formulario__label">Correo:</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error"> El correo solo se permiten letras una mayusculas y minusculas.  </p>
+  
+            
+             <!--Grupo telefono-->
+            <div class="formulario__grupo" id="gurpo__telefono">
+                <label for="telefono" class="formulario__label">Telefono fijo o Celular:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="5523557891">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error">El telefono debe de ser de 10 digitos </p>
+            </div>  
+
+             <!--Grupo Direccion -->
+             <div class="formulario__grupo" id="gurpo__direccion">
+                <label for="direccion" class="formulario__label">Direccion:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Dirección del  evento">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error"> Calle # , Colonia , Municipio, Estado</p>
+            </div> 
+
+            <!--Grupo tipo de paquete-->
+            <div class="formulario_grupo" id="grupo__paquete">
+                <label for="paquete" class="formulario__label">Tipo de paquete</label>
+                <br>
+                <select class="formulario__grupo-selec" name="paquete" id="paquete">
+                    <option>Bodas</option>
+                    <option>XV años</option>
+                    <option>Familiar</option>
+                    <option>Boock</option>
+                
+                </select>
+            </div> 
+
+
+             <!--Grupo tipo de su paquete-->
+             <div class="formulario_grupo" id="grupo__subpaquete">
+                <label for="subpaquete" class="formulario__label">Tipo de subpaquete</label>
+                <br>
+                <select class="formulario__grupo-selec" name="subpaquete" id="subpaquete">
+                    <option>prime</option>
+                    <option>full</option>
+                    <option>basico</option>
+                </select>
+            </div> 
+
+
+            <!--Grupo contraseña-->
+            <div class="formulario__grupo" id="gurpo__password">
+                <label for="password" class="formulario__label">password</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password" placeholder="*****">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error">El correo solo puede tener letras, numeros , puntos, guiones y guien bajo </p>
+            </div>  
+
+
+            
+            
+            
+            <!--Grupo contraseña2-->
+            <div class="formulario__grupo" id="gurpo__password2">
+                <label for="password" class="formulario__label">Repetir password</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2" placeholder="*****">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error">El password debe de ser igual </p>
+            </div>   
+
+            <!--Gerupo: Terminos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input  class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                      Acepto termnos y condiciones
+                </label>
+            </div>
+
+
+            <div  class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error</b> Por favor rellena el formulario</p>
+            </div>
+
+            <div class="formulario_grupo  formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario_btn">Enviar Ir a carrito</button>
+                <button type="button" class="formulario_btn-enviar">Añadir paquete</button>
+            </div>
+                
+            
+     
+        </from>
+
     </main>
 
     <script src="js/formulario.js"></script>
