@@ -1,0 +1,31 @@
+package capitulo_2;
+
+public class Literales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int enteroFecimal = 100; 
+		int enteroOctal = 0100; 
+		int enteroHexadecimal = 0x100; 
+		
+		System.out.println("Enterno Hexadecimal es :" + enteroHexadecimal);
+		
+		long numeroLong = 100L;
+		double numeroDouble = 2.5;
+		float numeroConGuiones = 25_2558_266;
+		System.out.println("El número con guiones es: " + numeroConGuiones);
+		
+		char miChar = 'b'; 
+		char miOtroChair = '\'';
+		
+		String stringLiteral = "Esto es un literal";
+		
+		boolean booleanoVerdaderos = true; 
+		
+		String StringNulo = null;
+		
+	
+
+	}
+
+}

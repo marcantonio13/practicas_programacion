@@ -1,0 +1,18 @@
+package capitulo_2;
+
+public class TipodeDatosPrimitivos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte elMenorByte = Byte.MIN_VALUE;
+		byte elMayorByte = Byte.MAX_VALUE; 
+		System.out.println("El tipo byte es un numro de  8 bits con signo. Esta comprendido entre  " + elMenorByte+ " y " + elMayorByte);
+		System.out.println("El tipo byte es un numro de  8 bits con signo. Esta comprendido entre  " + Short.MIN_VALUE + " y " + Short.MAX_VALUE);
+		System.out.println("El tipo byte es un numro de  8 bits con signo. Esta comprendido entre  " + Integer.MIN_VALUE + " y " + Integer.MIN_VALUE);
+		System.out.println("El tipo byte es un numro de  8 bits con signo. Esta comprendido entre  " + Long.MIN_VALUE+ " y " + Long.MAX_VALUE);
+		
+		
+
+	}
+
+}

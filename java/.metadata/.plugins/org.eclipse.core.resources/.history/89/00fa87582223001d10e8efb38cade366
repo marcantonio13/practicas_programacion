@@ -1,0 +1,26 @@
+package capitulo_2;
+
+public class OperadorAsignscion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a, b, c;
+		a = b = c = 8; 
+		
+		System.out.println("El valor de c es " + c); 
+		
+		int x = 10; 
+		x = x +3; 
+		System.out.println("El valor de la varible x es " + x);
+		
+		int y = 10;
+		 y+ = 3; // Esta es la forma de asignacion de modo compacto
+		 
+		 System.out.println("El valor de la variable y es " + y);
+		 
+		
+
+	}
+
+}

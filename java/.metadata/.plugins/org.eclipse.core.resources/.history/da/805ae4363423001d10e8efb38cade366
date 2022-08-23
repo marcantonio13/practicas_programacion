@@ -1,0 +1,31 @@
+package capitulo_2;
+import java.util.Scanner;
+
+
+/* El programa que pida pantalla introducir una cantida en pesos y devuleva la conversion en USA
+ * ose que pesos equivale a US dolares.
+ * 
+ * */
+public class Conversor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Bien venida al conversor de moneda");
+		System.out.println("Intrudduce una cantida en pesos te devolvera la cantidad equivalente ensca dolares USA");
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		double pesos = scanner.nextDouble();
+		
+		double dolares = 0.05*pesos;
+		
+		System.out.println(pesos + "pesos equivale a " + dolares + "US dolares");
+		
+	
+		 
+		
+		
+
+	}
+
+}
