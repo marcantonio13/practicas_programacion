@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <i class="formulario__validacion-estado fas fa-times-circle"></i>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
-    <h1 style="text-align: center ;" >Formulario </h1>
-    
     <main>
-        <from action="" class="formulario" id="formulario">
+        <from action="" class="formulario" id="formulario" >
             <!--Grupo Usuario-->
             <div class="formulario__grupo" id="gurpo__usuario">
                 <label for="usuario" class="formulario__label">Usuario</label>
@@ -22,7 +20,7 @@
                     <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Sutano">
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
-                    <p class="formulario__input-error"> El usario tiene que ser de 4 a 16 digitos y solo ouede contener numeros y guien bajo.  </p>
+                    <p class="formulario__ input-error"> El usario tiene que ser de 4 a 16 digitos y solo ouede contener numeros y guien bajo.  </p>
             </div>   
             
             <!--Grupo nombre-->
@@ -76,31 +74,6 @@
                     <p class="formulario__input-error"> Calle # , Colonia , Municipio, Estado</p>
             </div> 
 
-            <!--Grupo tipo de paquete-->
-            <div class="formulario_grupo" id="grupo__paquete">
-                <label for="paquete" class="formulario__label">Tipo de paquete</label>
-                <br>
-                <select class="formulario__grupo-selec" name="paquete" id="paquete">
-                    <option>Bodas</option>
-                    <option>XV años</option>
-                    <option>Familiar</option>
-                    <option>Boock</option>
-                
-                </select>
-            </div> 
-
-
-             <!--Grupo tipo de su paquete-->
-             <div class="formulario_grupo" id="grupo__subpaquete">
-                <label for="subpaquete" class="formulario__label">Tipo de subpaquete</label>
-                <br>
-                <select class="formulario__grupo-selec" name="subpaquete" id="subpaquete">
-                    <option>prime</option>
-                    <option>full</option>
-                    <option>basico</option>
-                </select>
-            </div> 
-
 
             <!--Grupo contraseña-->
             <div class="formulario__grupo" id="gurpo__password">
@@ -126,6 +99,32 @@
                     <p class="formulario__input-error">El password debe de ser igual </p>
             </div>   
 
+            
+            <!--Grupo tipo de paquete-->
+            <div class="formulario_grupo" id="grupo__paquete">
+                <label for="paquete" class="formulario__label">Tipo de paquete</label>
+                <br>
+                <select class="formulario__grupo-selec" name="paquete" id="paquete">
+                    <option>Bodas</option>
+                    <option>XV años</option>
+                    <option>Familiar</option>
+                    <option>Boock</option>
+                
+                </select>
+            </div> 
+
+
+             <!--Grupo tipo de su paquete-->
+             <div class="formulario_grupo" id="grupo__subpaquete">
+                <label for="subpaquete" class="formulario__label">Tipo de subpaquete</label>
+                <br>
+                <select class="formulario__grupo-selec" name="subpaquete" id="subpaquete">
+                    <option>prime</option>
+                    <option>full</option>
+                    <option>basico</option>
+                </select>
+            </div> 
+            
             <!--Gerupo: Terminos y condiciones-->
             <div class="formulario__grupo" id="grupo__terminos">
                 <label class="formulario__label">
@@ -135,19 +134,22 @@
             </div>
 
 
+
+
+
             <div  class="formulario__mensaje" id="formulario__mensaje">
                 <p><i class="fas fa-exclamation-triangle"></i> <b>Error</b> Por favor rellena el formulario</p>
             </div>
 
             <div class="formulario_grupo  formulario_grupo-btn-enviar">
-                <button type="submit" class="formulario_btn">Enviar Ir a carrito</button>
                 <button type="button" class="formulario_btn-enviar">Añadir paquete</button>
+                <br>
+                <br>
+                <button type="submit" class="formulario_btn">Enviar Ir a carrito</button> 
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+                <br>
             </div>
-                
-            
-     
         </from>
-
     </main>
 
     <script src="js/formulario.js"></script>
